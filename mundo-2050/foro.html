@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foro de Discusión 2050 - Mundo Futuro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="theme-switch-wrapper">
+        <span id="toggle-icon">
+            <i class="fas fa-sun"></i>
+        </span>
+        <label class="theme-switch">
+            <input type="checkbox">
+            <div class="slider round"></div>
+        </label>
+    </div>
+    
+    <header id="header">
+        <nav class="navbar">
+            <div class="logo">
+                <span>2050</span>
+                <span>FUTURO</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="tecnologia.html" class="nav-link">Tecnología</a></li>
+                <li><a href="sociedad.html" class="nav-link">Sociedad</a></li>
+                <li><a href="clima.html" class="nav-link">Clima</a></li>
+                <li><a href="transporte.html" class="nav-link">Transporte</a></li>
+                <li><a href="galeria.html" class="nav-link">Galería</a></li>
+                <li><a href="#debates" class="nav-link active">Foro</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="debates" class="section forum-section">
+        <div class="section-header">
+            <h2>Foro de Discusión</h2>
+            <div class="underline"></div>
+            <p class="section-subtitle">Comparte tus ideas, predicciones y preocupaciones sobre el futuro</p>
+        </div>
+        
+        <div class="forum-actions">
+            <button id="newTopicBtn" class="neon-button"><i class="fas fa-plus"></i> Nuevo Tema</button>
+            <div class="forum-search">
+                <input type="text" placeholder="Buscar en el foro...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+        
+        <div class="new-topic-form" id="newTopicForm">
+            <h3>Crear Nuevo Tema</h3>
+            <div class="form-group">
+                <label for="topicTitle">Título:</label>
+                <input type="text" id="topicTitle" placeholder="¿De qué quieres hablar?">
+            </div>
+            <div class="form-group">
+                <label for="topicCategory">Categoría:</label>
+                <select id="topicCategory">
+                    <option value="tecnologia">Tecnología</option>
+                    <option value="sociedad">Sociedad</option>
+                    <option value="clima">Clima y Medioambiente</option>
+                    <option value="transporte">Transporte</option>
+                    <option value="otros">Otros</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="topicContent">Mensaje:</label>
+                <textarea id="topicContent" rows="5" placeholder="Desarrolla tu idea aquí..."></textarea>
+            </div>
+            <div class="form-actions">
+                <button id="cancelTopicBtn" class="btn-cancel">Cancelar</button>
+                <button id="submitTopicBtn" class="btn-submit">Publicar</button>
+            </div>
+        </div>
+        
+        <div class="forum-categories">
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3>Tecnología</h3>
+                <p>Discusiones sobre IA, computación cuántica, internet del futuro y más</p>
+                <a href="#tecnologia" class="category-link">Ver temas <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Sociedad</h3>
+                <p>El futuro del trabajo, la educación, la política y las relaciones humanas</p>
+                <a href="#sociedad" class="category-link">Ver temas <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <h3>Clima</h3>
+                <p>Medioambiente, energías renovables y ciudades sostenibles</p>
+                <a href="#clima" class="category-link">Ver temas <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="fas fa-space-shuttle"></i>
+                </div>
+                <h3>Transporte</h3>
+                <p>Autos voladores, Hyperloop, colonización espacial y movilidad urbana</p>
+                <a href="#transporte" class="category-link">Ver temas <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+        
+        <div class="forum-topics">
+            <h3>Últimos Temas</h3>
+            
+            <div class="topic-list">
+                <div class="topic-item">
+                    <div class="topic-votes">
+                        <button class="vote-btn up"><i class="fas fa-arrow-up"></i></button>
+                        <span class="vote-count">24</span>
+                        <button class="vote-btn down"><i class="fas fa-arrow-down"></i></button>
+                    </div>
+                    <div class="topic-content">
+                        <h4><a href="#">¿La IA superará completamente a los humanos para 2050?</a></h4>
+                        <p class="topic-meta">Publicado por <span class="user">Futurista123</span> en <span class="category">Tecnología</span> - <span class="date">Hace 2 días</span></p>
+                        <p class="topic-excerpt">Hay mucha discusión sobre si la inteligencia artificial alcanzará una superinteligencia que deje obsoletas las capacidades humanas. ¿Qué opinan?</p>
+                        <div class="topic-stats">
+                            <span><i class="fas fa-comment"></i> 15 respuestas</span>
+                            <span><i class="fas fa-eye"></i> 120 vistas</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="topic-item">
+                    <div class="topic-votes">
+                        <button class="vote-btn up"><i class="fas fa-arrow-up"></i></button>
+                        <span class="vote-count">18</span>
+                        <button class="vote-btn down"><i class="fas fa-arrow-down"></i></button>
+                    </div>
+                    <div class="topic-content">
+                        <h4><a href="#">¿Será posible revertir el cambio climático para 2050?</a></h4>
+                        <p class="topic-meta">Publicado por <span class="user">EcoWarrior</span> en <span class="category">Clima</span> - <span class="date">Hace 5 días</span></p>
+                        <p class="topic-excerpt">Con las tecnologías emergentes de captura de carbono y energías renovables, ¿lograremos restaurar el equilibrio climático?</p>
+                        <div class="topic-stats">
+                            <span><i class="fas fa-comment"></i> 22 respuestas</span>
+                            <span><i class="fas fa-eye"></i> 95 vistas</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="topic-item">
+                    <div class="topic-votes">
+                        <button class="vote-btn up"><i class="fas fa-arrow-up"></i></button>
+                        <span class="vote-count">9</span>
+                        <button class="vote-btn down"><i class="fas fa-arrow-down"></i></button>
+                    </div>
+                    <div class="topic-content">
+                        <h4><a href="#">El futuro del dinero: ¿Cripto o monedas digitales de bancos centrales?</a></h4>
+                        <p class="topic-meta">Publicado por <span class="user">Finanzas2050</span> en <span class="category">Sociedad</span> - <span class="date">Hace 1 semana</span></p>
+                        <p class="topic-excerpt">Para 2050, el dinero físico probablemente habrá desaparecido. ¿Qué forma tomará el dinero digital dominante?</p>
+                        <div class="topic-stats">
+                            <span><i class="fas fa-comment"></i> 30 respuestas</span>
+                            <span><i class="fas fa-eye"></i> 150 vistas</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="topic-item">
+                    <div class="topic-votes">
+                        <button class="vote-btn up"><i class="fas fa-arrow-up"></i></button>
+                        <span class="vote-count">5</span>
+                        <button class="vote-btn down"><i class="fas fa-arrow-down"></i></button>
+                    </div>
+                    <div class="topic-content">
+                        <h4><a href="#">¿Cuántas personas vivirán en Marte para 2050?</a></h4>
+                        <p class="topic-meta">Publicado por <span class="user">SpaceExplorer</span> en <span class="category">Transporte</span> - <span class="date">Hace 2 semanas</span></p>
+                        <p class="topic-excerpt">Las estimaciones varían mucho. ¿Serán solo científicos o habrá colonias civiles completas?</p>
+                        <div class="topic-stats">
+                            <span><i class="fas fa-comment"></i> 12 respuestas</span>
+                            <span><i class="fas fa-eye"></i> 80 vistas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="load-more">Cargar más temas</button>
+        </div>
+    </section>
+
+    <section id="encuestas" class="section dark-section">
+        <div class="section-header">
+            <h2>Encuestas</h2>
+            <div class="underline"></div>
+        </div>
+        
+        <div class="polls-container">
+            <div class="poll-card">
+                <h3>¿Cuál será el avance más impactante para 2050?</h3>
+                <div class="poll-options">
+                    <div class="option">
+                        <div class="option-text">Inteligencia Artificial General</div>
+                        <div class="option-bar" style="width: 45%;">45%</div>
+                    </div>
+                    <div class="option">
+                        <div class="option-text">Energía de Fusión Nuclear</div>
+                        <div class="option-bar" style="width: 25%;">25%</div>
+                    </div>
+                    <div class="option">
+                        <div class="option-text">Cura del Envejecimiento</div>
+                        <div class="option-bar" style="width: 20%;">20%</div>
+                    </div>
+                    <div class="option">
+                        <div class="option-text">Colonización de Marte</div>
+                        <div class="option-bar" style="width: 10%;">10%</div>
+                    </div>
+                </div>
+                <div class="poll-meta">
+                    <span>Total votos: 1,240</span>
+                    <button class="vote-btn">Votar</button>
+                </div>
+            </div>
+            
+            <div class="poll-card">
+                <h3>¿Cómo será tu principal medio de transporte en 2050?</h3>
+                <div class="poll-options">
+                    <div class="option">
+                        <div class="option-text">Auto volador personal</div>
+                        <div class="option-bar" style="width: 35%;">35%</div>
+                    </div>
+                    <div class="option">
+                        <div class="option-text">Hyperloop</div>
+                        <div class="option-bar" style="width: 30%;">30%</div>
+                    </div>
+                    <div class="option">
+                        <div class="option-text">Transporte público autónomo</div>
+                        <div class="option-bar" style="width: 25%;">25%</div>
+                    </div>
+                    <div class="option">
+                        <div class="option-text">Teletransportación virtual</div>
+                        <div class="option-bar" style="width: 10%;">10%</div>
+                    </div>
+                </div>
+                <div class="poll-meta">
+                    <span>Total votos: 980</span>
+                    <button class="vote-btn">Votar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="preguntas" class="section">
+        <div class="section-header">
+            <h2>Preguntas y Respuestas</h2>
+            <div class="underline"></div>
+            <p class="section-subtitle">Haz tus preguntas sobre el futuro y obtén respuestas de nuestra comunidad</p>
+        </div>
+        
+        <div class="qa-container">
+            <div class="qa-form">
+                <h3>Haz una pregunta</h3>
+                <div class="form-group">
+                    <textarea placeholder="Escribe tu pregunta sobre cómo será el mundo en 2050..."></textarea>
+                </div>
+                <button class="submit-question">Enviar Pregunta</button>
+            </div>
+            
+            <div class="qa-list">
+                <div class="qa-item">
+                    <div class="question">
+                        <h4>¿Habrá reemplazado completamente la realidad virtual a los viajes físicos?</h4>
+                        <p class="meta">Preguntado por <span class="user">TravelLover</span> - <span class="date">Hace 3 días</span></p>
+                    </div>
+                    <div class="answer">
+                        <p class="meta">Respondido por <span class="user">TechExpert2050</span> - <span class="date">Hace 1 día</span></p>
+                        <p>Es poco probable que la RV reemplace completamente los viajes físicos, pero sí cambiará significativamente la industria. Para 2050, estimo que el 60% de los viajes de negocios y el 30% de los turísticos se harán en metaversos hiperrealistas, especialmente para destinos lejanos. Sin embargo, la experiencia física seguirá siendo valorada para vacaciones y experiencias culturales.</p>
+                        <div class="answer-actions">
+                            <button class="like-btn"><i class="fas fa-thumbs-up"></i> 8</button>
+                            <button class="dislike-btn"><i class="fas fa-thumbs-down"></i> 2</button>
+                            <button class="reply-btn">Responder</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="qa-item">
+                    <div class="question">
+                        <h4>¿Seguirán existiendo los smartphones en 2050 o serán reemplazados por implantes?</h4>
+                        <p class="meta">Preguntado por <span class="user">GadgetFan</span> - <span class="date">Hace 1 semana</span></p>
+                    </div>
+                    <div class="answer">
+                        <p class="meta">Respondido por <span class="user">NeuralTech</span> - <span class="date">Hace 5 días</span></p>
+                        <p>Los smartphones como los conocemos hoy probablemente desaparecerán, pero no necesariamente serán reemplazados por implantes cerebrales invasivos. Lo más probable es que usemos dispositivos portátiles ultradelgados (como lentes de contacto inteligentes o parches cutáneos) combinados con interfaces neuronales no invasivas para controlar la tecnología a nuestro alrededor. Los implantes cerebrales directos probablemente seguirán siendo opcionales debido a preocupaciones de privacidad y salud.</p>
+                        <div class="answer-actions">
+                            <button class="like-btn"><i class="fas fa-thumbs-up"></i> 15</button>
+                            <button class="dislike-btn"><i class="fas fa-thumbs-down"></i> 3</button>
+                            <button class="reply-btn">Responder</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="qa-item">
+                    <div class="question">
+                        <h4>¿Cómo afectará la automatización al empleo en sectores creativos?</h4>
+                        <p class="meta">Preguntado por <span class="user">CreativeMind</span> - <span class="date">Hace 2 semanas</span></p>
+                    </div>
+                    <div class="answer">
+                        <p class="meta">Respondido por <span class="user">FutureOfWork</span> - <span class="date">Hace 1 semana</span></p>
+                        <p>La IA ya está impactando sectores creativos (arte, música, escritura), pero en lugar de reemplazar completamente a los humanos, es más probable que se convierta en una herramienta colaborativa. Para 2050, veremos "co-creación" donde los humanos proporcionan la visión y dirección estratégica, mientras que las IA manejan la ejecución técnica. Los trabajos creativos evolucionarán hacia roles de curaduría, edición y dirección creativa, mientras que las tareas más repetitivas serán automatizadas.</p>
+                        <div class="answer-actions">
+                            <button class="like-btn"><i class="fas fa-thumbs-up"></i> 22</button>
+                            <button class="dislike-btn"><i class="fas fa-thumbs-down"></i> 1</button>
+                            <button class="reply-btn">Responder</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Explora el Futuro</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="tecnologia.html">Tecnología</a></li>
+                    <li><a href="sociedad.html">Sociedad</a></li>
+                    <li><a href="clima.html">Clima</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Recursos</h3>
+                <ul>
+                    <li><a href="transporte.html">Transporte</a></li>
+                    <li><a href="galeria.html">Galería Multimedia</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Conéctate</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/17872137805" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+                <p>Suscríbete para recibir actualizaciones sobre el futuro</p>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Tu email">
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Mundo 2050. Todos los derechos reservados. | <a href="#">Política de Privacidad</a> | <a href="#">Términos de Servicio</a></p>
+        </div>
+    </footer>
+
+    <div class="modal" id="image-modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modal-image">
+        <div class="modal-caption" id="modal-caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Mostrar/ocultar formulario de nuevo tema
+        const newTopicBtn = document.getElementById('newTopicBtn');
+        const newTopicForm = document.getElementById('newTopicForm');
+        const cancelTopicBtn = document.getElementById('cancelTopicBtn');
+        
+        newTopicBtn.addEventListener('click', function() {
+            newTopicForm.style.display = 'block';
+            this.style.display = 'none';
+        });
+        
+        cancelTopicBtn.addEventListener('click', function() {
+            newTopicForm.style.display = 'none';
+            newTopicBtn.style.display = 'block';
+        });
+        
+        // Sistema de votación en temas
+        document.querySelectorAll('.vote-btn.up').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const voteCount = this.nextElementSibling;
+                const downBtn = this.parentElement.querySelector('.down');
+                
+                if(this.classList.contains('active')) {
+                    this.classList.remove('active');
+                    voteCount.textContent = parseInt(voteCount.textContent) - 1;
+                } else {
+                    if(downBtn.classList.contains('active')) {
+                        downBtn.classList.remove('active');
+                        voteCount.textContent = parseInt(voteCount.textContent) + 2;
+                    } else {
+                        voteCount.textContent = parseInt(voteCount.textContent) + 1;
+                    }
+                    this.classList.add('active');
+                }
+            });
+        });
+        
+        document.querySelectorAll('.vote-btn.down').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const voteCount = this.previousElementSibling;
+                const upBtn = this.parentElement.querySelector('.up');
+                
+                if(this.classList.contains('active')) {
+                    this.classList.remove('active');
+                    voteCount.textContent = parseInt(voteCount.textContent) + 1;
+                } else {
+                    if(upBtn.classList.contains('active')) {
+                        upBtn.classList.remove('active');
+                        voteCount.textContent = parseInt(voteCount.textContent) - 2;
+                    } else {
+                        voteCount.textContent = parseInt(voteCount.textContent) - 1;
+                    }
+                    this.classList.add('active');
+                }
+            });
+        });
+        
+        // Sistema de votación en encuestas
+        document.querySelectorAll('.poll-options .option').forEach(option => {
+            option.addEventListener('click', function() {
+                // Quitar selección anterior
+                this.parentElement.querySelectorAll('.option').forEach(opt => {
+                    opt.classList.remove('selected');
+                });
+                
+                // Seleccionar esta opción
+                this.classList.add('selected');
+            });
+        });
+        
+        // Mostrar mensaje al votar
+        document.querySelectorAll('.poll-card .vote-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const selected = this.closest('.poll-card').querySelector('.option.selected');
+                if(selected) {
+                    alert('¡Gracias por votar!');
+                } else {
+                    alert('Por favor selecciona una opción antes de votar');
+                }
+            });
+        });
+        
+        // Sistema de likes en respuestas
+        document.querySelectorAll('.like-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const count = parseInt(this.textContent.trim());
+                const dislikeBtn = this.nextElementSibling;
+                
+                if(this.classList.contains('active')) {
+                    this.classList.remove('active');
+                    this.innerHTML = `<i class="fas fa-thumbs-up"></i> ${count - 1}`;
+                } else {
+                    if(dislikeBtn.classList.contains('active')) {
+                        const dislikeCount = parseInt(dislikeBtn.textContent.trim());
+                        dislikeBtn.classList.remove('active');
+                        dislikeBtn.innerHTML = `<i class="fas fa-thumbs-down"></i> ${dislikeCount - 1}`;
+                        this.innerHTML = `<i class="fas fa-thumbs-up"></i> ${count + 1}`;
+                    } else {
+                        this.innerHTML = `<i class="fas fa-thumbs-up"></i> ${count + 1}`;
+                    }
+                    this.classList.add('active');
+                }
+            });
+        });
+        
+        document.querySelectorAll('.dislike-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const count = parseInt(this.textContent.trim());
+                const likeBtn = this.previousElementSibling;
+                
+                if(this.classList.contains('active')) {
+                    this.classList.remove('active');
+                    this.innerHTML = `<i class="fas fa-thumbs-down"></i> ${count - 1}`;
+                } else {
+                    if(likeBtn.classList.contains('active')) {
+                        const likeCount = parseInt(likeBtn.textContent.trim());
+                        likeBtn.classList.remove('active');
+                        likeBtn.innerHTML = `<i class="fas fa-thumbs-up"></i> ${likeCount - 1}`;
+                        this.innerHTML = `<i class="fas fa-thumbs-down"></i> ${count + 1}`;
+                    } else {
+                        this.innerHTML = `<i class="fas fa-thumbs-down"></i> ${count + 1}`;
+                    }
+                    this.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

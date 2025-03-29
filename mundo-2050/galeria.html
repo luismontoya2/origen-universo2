@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Multimedia 2050 - Mundo Futuro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="theme-switch-wrapper">
+        <span id="toggle-icon">
+            <i class="fas fa-sun"></i>
+        </span>
+        <label class="theme-switch">
+            <input type="checkbox">
+            <div class="slider round"></div>
+        </label>
+    </div>
+    
+    <header id="header">
+        <nav class="navbar">
+            <div class="logo">
+                <span>2050</span>
+                <span>FUTURO</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="tecnologia.html" class="nav-link">Tecnología</a></li>
+                <li><a href="sociedad.html" class="nav-link">Sociedad</a></li>
+                <li><a href="clima.html" class="nav-link">Clima</a></li>
+                <li><a href="transporte.html" class="nav-link">Transporte</a></li>
+                <li><a href="#fotos" class="nav-link active">Galería</a></li>
+                <li><a href="foro.html" class="nav-link">Foro</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="fotos" class="section gallery-section">
+        <div class="section-header">
+            <h2>Galería Multimedia</h2>
+            <div class="underline"></div>
+            <p class="section-subtitle">Explora visualmente cómo podría ser el mundo en 2050</p>
+        </div>
+        
+        <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">Todo</button>
+            <button class="filter-btn" data-filter="tecnologia">Tecnología</button>
+            <button class="filter-btn" data-filter="ciudades">Ciudades</button>
+            <button class="filter-btn" data-filter="transporte">Transporte</button>
+            <button class="filter-btn" data-filter="espacio">Espacio</button>
+        </div>
+        
+        <div class="gallery-grid">
+            <div class="gallery-item tecnologia">
+                <img src="https://images.unsplash.com/photo-1677442135136-760c813a743d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Interacción humano-IA" class="zoom-img">
+                <div class="item-overlay">
+                    <h3>Interacción Humano-IA</h3>
+                    <p>Interfaces neuronales permiten comunicación directa con sistemas de inteligencia artificial</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item ciudades">
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Ciudad futurista" class="zoom-img">
+                <div class="item-overlay">
+                    <h3>Ciudad Vertical</h3>
+                    <p>Rascacielos conectados por puentes aéreos y corredores de transporte</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item transporte">
+                <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Autos voladores" class="zoom-img">
+                <div class="item-overlay">
+                    <h3>Transporte Aéreo Personal</h3>
+                    <p>Vehículos eléctricos de despegue vertical (eVTOLs) dominan los cielos urbanos</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item espacio">
+                <img src="https://images.unsplash.com/photo-1454789548928-9efd52dc4031?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Colonia marciana" class="zoom-img">
+                <div class="item-overlay">
+                    <h3>Colonia Marciana</h3>
+                    <p>Primeros asentamientos humanos permanentes en Marte</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item tecnologia">
+                <img src="https://images.unsplash.com/photo-1639762681057-408e52192e55?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Metaverso" class="zoom-img">
+                <div class="item-overlay">
+                    <h3>Metaverso Hiperrealista</h3>
+                    <p>Realidad virtual indistinguible del mundo físico</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item ciudades">
+                <img src="https://images.unsplash.com/photo-1615796153287-98eacf0abb13?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Ciudad submarina" class="zoom-img">
+                <div class="item-overlay">
+                    <h3>Ciudad Submarina</h3>
+                    <p>Hábitats presurizados aprovechan el espacio bajo los océanos</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item transporte">
+                <img src="https://images.unsplash.com/photo-1516912481808-3406841bd33c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Hyperloop" class="zoom-img">
+                <div class="item-overlay">
+                    <h3>Estación Hyperloop</h3>
+                    <p>Transporte supersónico en tubos de vacío conecta continentes</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item tecnologia">
+                <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Computación cuántica" class="zoom-img">
+                <div class="item-overlay">
+                    <h3>Computación Cuántica</h3>
+                    <p>Ordenadores cuánticos comerciales resuelven problemas imposibles</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="videos" class="section dark-section">
+        <div class="section-header">
+            <h2>Videos Explicativos</h2>
+            <div class="underline"></div>
+        </div>
+        
+        <div class="video-gallery">
+            <div class="video-item">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>La Vida en 2050</h3>
+                    <p>Un vistazo a cómo será un día cualquiera en el año 2050, desde que te despiertas hasta que te acuestas.</p>
+                </div>
+            </div>
+            
+            <div class="video-item">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Tecnologías que Cambiarán Todo</h3>
+                    <p>Los avances científicos que redefinirán la sociedad humana para mediados de siglo.</p>
+                </div>
+            </div>
+            
+            <div class="video-item">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Ciudades del Futuro</h3>
+                    <p>Cómo el diseño urbano evolucionará para crear espacios más eficientes y habitables.</p>
+                </div>
+            </div>
+            
+            <div class="video-item">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>El Futuro del Trabajo</h3>
+                    <p>Qué empleos existirán, cuáles desaparecerán y cómo nos adaptaremos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="animaciones" class="section">
+        <div class="section-header">
+            <h2>Animaciones Interactivas</h2>
+            <div class="underline"></div>
+        </div>
+        
+        <div class="animation-container">
+            <div class="animation-card">
+                <div class="animation-placeholder" id="tech-evolution">
+                    <canvas id="techCanvas"></canvas>
+                </div>
+                <div class="animation-controls">
+                    <button id="playTech">Reproducir</button>
+                    <button id="pauseTech">Pausar</button>
+                </div>
+                <div class="animation-info">
+                    <h3>Evolución Tecnológica</h3>
+                    <p>Observa cómo las tecnologías clave evolucionarán desde 2020 hasta 2050.</p>
+                </div>
+            </div>
+            
+            <div class="animation-card">
+                <div class="animation-placeholder" id="city-growth">
+                    <canvas id="cityCanvas"></canvas>
+                </div>
+                <div class="animation-controls">
+                    <button id="playCity">Reproducir</button>
+                    <button id="pauseCity">Pausar</button>
+                    <input type="range" id="citySpeed" min="1" max="10" value="5">
+                </div>
+                <div class="animation-info">
+                    <h3>Crecimiento Urbano</h3>
+                    <p>Simulación de cómo una ciudad puede transformarse en tres décadas.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="prediction-tool">
+            <h3>Simulador de Avances Tecnológicos</h3>
+            <p>Selecciona un año para ver qué tecnologías podrían ser comunes:</p>
+            
+            <div class="slider-container">
+                <input type="range" id="yearSlider" min="2023" max="2050" value="2030" step="1">
+                <div id="yearValue">2030</div>
+            </div>
+            
+            <div class="prediction-result" id="predictionResult">
+                <div class="tech-item">
+                    <i class="fas fa-robot"></i>
+                    <div class="tech-info">
+                        <h4>Robots Domésticos</h4>
+                        <div class="tech-progress">
+                            <div class="progress-bar" style="width: 30%;"></div>
+                        </div>
+                        <p>30% de hogares con robots personales</p>
+                    </div>
+                </div>
+                
+                <div class="tech-item">
+                    <i class="fas fa-car-side"></i>
+                    <div class="tech-info">
+                        <h4>Autos Autónomos</h4>
+                        <div class="tech-progress">
+                            <div class="progress-bar" style="width: 45%;"></div>
+                        </div>
+                        <p>45% de vehículos son autónomos</p>
+                    </div>
+                </div>
+                
+                <div class="tech-item">
+                    <i class="fas fa-vr-cardboard"></i>
+                    <div class="tech-info">
+                        <h4>Realidad Virtual</h4>
+                        <div class="tech-progress">
+                            <div class="progress-bar" style="width: 60%;"></div>
+                        </div>
+                        <p>60% adopción en educación</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Explora el Futuro</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="tecnologia.html">Tecnología</a></li>
+                    <li><a href="sociedad.html">Sociedad</a></li>
+                    <li><a href="clima.html">Clima</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Recursos</h3>
+                <ul>
+                    <li><a href="transporte.html">Transporte</a></li>
+                    <li><a href="foro.html">Foro de Discusión</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Conéctate</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/17872137805" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+                <p>Suscríbete para recibir actualizaciones sobre el futuro</p>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Tu email">
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Mundo 2050. Todos los derechos reservados. | <a href="#">Política de Privacidad</a> | <a href="#">Términos de Servicio</a></p>
+        </div>
+    </footer>
+
+    <div class="modal" id="image-modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modal-image">
+        <div class="modal-caption" id="modal-caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Filtrado de galería
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Quitar active de todos los botones
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                // Añadir active al botón clickeado
+                this.classList.add('active');
+                
+                const filter = this.getAttribute('data-filter');
+                const items = document.querySelectorAll('.gallery-item');
+                
+                items.forEach(item => {
+                    if(filter === 'all' || item.classList.contains(filter)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+        
+        // Control del slider de años
+        const yearSlider = document.getElementById('yearSlider');
+        const yearValue = document.getElementById('yearValue');
+        
+        yearSlider.addEventListener('input', function() {
+            yearValue.textContent = this.value;
+            updatePredictions(this.value);
+        });
+        
+        function updatePredictions(year) {
+            const progress = document.querySelectorAll('.progress-bar');
+            const yearDiff = year - 2023;
+            const percent = yearDiff / (2050 - 2023);
+            
+            // Robots domésticos
+            const robotsPercent = Math.min(100, Math.round(percent * 130));
+            progress[0].style.width = `${robotsPercent}%`;
+            progress[0].nextElementSibling.textContent = `${robotsPercent}% de hogares con robots personales`;
+            
+            // Autos autónomos
+            const carsPercent = Math.min(100, Math.round(percent * 145));
+            progress[1].style.width = `${carsPercent}%`;
+            progress[1].nextElementSibling.textContent = `${carsPercent}% de vehículos son autónomos`;
+            
+            // Realidad virtual
+            const vrPercent = Math.min(100, Math.round(percent * 160));
+            progress[2].style.width = `${vrPercent}%`;
+            progress[2].nextElementSibling.textContent = `${vrPercent}% adopción en educación`;
+        }
+        
+        // Animaciones canvas
+        const techCanvas = document.getElementById('techCanvas');
+        const cityCanvas = document.getElementById('cityCanvas');
+        
+        // Configurar canvas
+        techCanvas.width = techCanvas.offsetWidth;
+        techCanvas.height = techCanvas.offsetHeight;
+        cityCanvas.width = cityCanvas.offsetWidth;
+        cityCanvas.height = cityCanvas.offsetHeight;
+        
+        const techCtx = techCanvas.getContext('2d');
+        const cityCtx = cityCanvas.getContext('2d');
+        
+        // Animación de evolución tecnológica
+        let techAnimationId;
+        let techYear = 2023;
+        
+        function drawTechEvolution() {
+            techCtx.clearRect(0, 0, techCanvas.width, techCanvas.height);
+            
+            // Dibujar línea de tiempo
+            techCtx.beginPath();
+            techCtx.moveTo(50, techCanvas.height / 2);
+            techCtx.lineTo(techCanvas.width - 50, techCanvas.height / 2);
+            techCtx.strokeStyle = '#00f0ff';
+            techCtx.lineWidth = 2;
+            techCtx.stroke();
+            
+            // Dibujar marcador de año
+            techCtx.fillStyle = '#00f0ff';
+            techCtx.font = '14px Arial';
+            techCtx.fillText(techYear, 10, techCanvas.height / 2 + 5);
+            
+            // Dibujar tecnologías
+            const techs = [
+                { name: 'IA General', pos: 0.2, color: '#ff00aa' },
+                { name: 'Computación Cuántica', pos: 0.5, color: '#00ffaa' },
+                { name: 'Nanomedicina', pos: 0.7, color: '#aa00ff' }
+            ];
+            
+            const xPos = 50 + ((techYear - 2023) / (2050 - 2023)) * (techCanvas.width - 100);
+            
+            techs.forEach(tech => {
+                const yPos = techCanvas.height / 2 - 30 + tech.pos * 60;
+                
+                techCtx.beginPath();
+                techCtx.arc(xPos, yPos, 8, 0, Math.PI * 2);
+                techCtx.fillStyle = tech.color;
+                techCtx.fill();
+                
+                if(techYear % 5 === 0 || techYear === 2023 || techYear === 2050) {
+                    techCtx.fillStyle = '#ffffff';
+                    techCtx.font = '12px Arial';
+                    techCtx.fillText(tech.name, xPos + 15, yPos + 5);
+                }
+            });
+            
+            techYear++;
+            if(techYear > 2050) techYear = 2023;
+            
+            techAnimationId = requestAnimationFrame(drawTechEvolution);
+        }
+        
+        document.getElementById('playTech').addEventListener('click', function() {
+            if(!techAnimationId) {
+                drawTechEvolution();
+            }
+        });
+        
+        document.getElementById('pauseTech').addEventListener('click', function() {
+            cancelAnimationFrame(techAnimationId);
+            techAnimationId = null;
+        });
+        
+        // Animación de crecimiento urbano
+        let cityAnimationId;
+        let cityYear = 2023;
+        let citySpeed = 5;
+        
+        function drawCityGrowth() {
+            cityCtx.clearRect(0, 0, cityCanvas.width, cityCanvas.height);
+            
+            // Dibujar fondo
+            cityCtx.fillStyle = '#0f0f1a';
+            cityCtx.fillRect(0, 0, cityCanvas.width, cityCanvas.height);
+            
+            // Dibujar terreno
+            cityCtx.fillStyle = '#1a2a1a';
+            cityCtx.beginPath();
+            cityCtx.moveTo(0, cityCanvas.height);
+            cityCtx.lineTo(0, cityCanvas.height * 0.7);
+            cityCtx.lineTo(cityCanvas.width, cityCanvas.height * 0.6);
+            cityCtx.lineTo(cityCanvas.width, cityCanvas.height);
+            cityCtx.closePath();
+            cityCtx.fill();
+            
+            // Dibujar edificios según el año
+            const buildingCount = 5 + Math.floor((cityYear - 2023) / (2050 - 2023) * 20);
+            
+            for(let i = 0; i < buildingCount; i++) {
+                const x = Math.random() * cityCanvas.width;
+                const width = 30 + Math.random() * 50;
+                const height = 50 + (cityYear - 2023) / (2050 - 2023) * 150 + Math.random() * 50;
+                const y = cityCanvas.height * 0.6 - height;
+                
+                cityCtx.fillStyle = i % 3 === 0 ? '#334455' : i % 3 === 1 ? '#445566' : '#556677';
+                cityCtx.fillRect(x, y, width, height);
+                
+                // Ventanas
+                cityCtx.fillStyle = '#ffff00';
+                const windowRows = Math.floor(height / 15);
+                const windowCols = Math.floor(width / 10);
+                
+                for(let row = 0; row < windowRows; row++) {
+                    for(let col = 0; col < windowCols; col++) {
+                        if(Math.random() > 0.3) { // No todas las ventanas están encendidas
+                            cityCtx.fillRect(
+                                x + 5 + col * 10, 
+                                y + 5 + row * 15, 
+                                5, 
+                                8
+                            );
+                        }
+                    }
+                }
+            }
+            
+            // Dibujar info
+            cityCtx.fillStyle = '#ffffff';
+            cityCtx.font = '14px Arial';
+            cityCtx.fillText(`Año: ${cityYear} - Edificios: ${buildingCount}`, 10, 20);
+            
+            cityYear++;
+            if(cityYear > 2050) cityYear = 2023;
+            
+            cityAnimationId = setTimeout(() => {
+                requestAnimationFrame(drawCityGrowth);
+            }, 1000 / citySpeed);
+        }
+        
+        document.getElementById('playCity').addEventListener('click', function() {
+            if(!cityAnimationId) {
+                drawCityGrowth();
+            }
+        });
+        
+        document.getElementById('pauseCity').addEventListener('click', function() {
+            clearTimeout(cityAnimationId);
+            cityAnimationId = null;
+        });
+        
+        document.getElementById('citySpeed').addEventListener('input', function() {
+            citySpeed = this.value;
+        });
+    </script>
+</body>
+</html>
