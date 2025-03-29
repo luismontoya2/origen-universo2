@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Origen del Universo | Exploración Cósmica</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Origen<span>Universo</span></h1>
+            </div>
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#inicio" class="active">Inicio</a></li>
+                    <li><a href="#teorias">Teorías</a></li>
+                    <li><a href="#descubrimientos">Descubrimientos</a></li>
+                    <li><a href="#cientificos">Científicos</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="foro.html">Foro</a></li>
+                </ul>
+            </nav>
+            <button class="theme-toggle" aria-label="Cambiar tema">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="stars"></div>
+            <div class="twinkling"></div>
+            <div class="clouds"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Explorando los Misterios del Cosmos</h2>
+                    <p>Descubre las teorías, descubrimientos y mentes brillantes que han intentado explicar el origen de todo lo que existe.</p>
+                    <div class="hero-buttons">
+                        <a href="#teorias" class="btn btn-primary">Explorar</a>
+                        <button id="audio-btn" class="btn btn-secondary">
+                            <i class="fas fa-volume-up"></i> Escuchar resumen
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-down">
+                <a href="#teorias"><i class="fas fa-chevron-down"></i></a>
+            </div>
+        </section>
+
+        <section id="teorias" class="section">
+            <div class="container">
+                <h2 class="section-title">Teorías sobre el Origen del Universo</h2>
+                <p class="section-subtitle">Diferentes explicaciones científicas y filosóficas sobre cómo comenzó todo</p>
+                
+                <div class="grid-container">
+                    <div class="card" onclick="window.location.href='teorias.html#bigbang'">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Big Bang">
+                        </div>
+                        <div class="card-content">
+                            <h3>Big Bang</h3>
+                            <p>La teoría predominante que sugiere que el universo comenzó desde un punto extremadamente caliente y denso.</p>
+                            <span class="read-more">Leer más <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="card" onclick="window.location.href='teorias.html#estado-estacionario'">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Estado Estacionario">
+                        </div>
+                        <div class="card-content">
+                            <h3>Estado Estacionario</h3>
+                            <p>Teoría que propone que el universo siempre ha existido y se mantiene igual a gran escala.</p>
+                            <span class="read-more">Leer más <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="card" onclick="window.location.href='teorias.html#universo-oscilante'">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Universo Oscilante">
+                        </div>
+                        <div class="card-content">
+                            <h3>Universo Oscilante</h3>
+                            <p>Hipótesis que sugiere que el universo pasa por ciclos infinitos de expansión y contracción.</p>
+                            <span class="read-more">Leer más <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="card" onclick="window.location.href='teorias.html#multiverso'">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1504208434309-cb69f4fe52b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Multiverso">
+                        </div>
+                        <div class="card-content">
+                            <h3>Teoría del Multiverso</h3>
+                            <p>La idea de que nuestro universo es solo uno entre muchos universos paralelos.</p>
+                            <span class="read-more">Leer más <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="card" onclick="window.location.href='teorias.html#simulacion'">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Simulación">
+                        </div>
+                        <div class="card-content">
+                            <h3>Hipótesis de Simulación</h3>
+                            <p>La controvertida idea de que nuestro universo podría ser una simulación computacional avanzada.</p>
+                            <span class="read-more">Leer más <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-footer">
+                    <a href="teorias.html" class="btn btn-outline">Ver todas las teorías</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="descubrimientos" class="section dark-section">
+            <div class="container">
+                <h2 class="section-title">Descubrimientos Clave</h2>
+                <p class="section-subtitle">Los hallazgos científicos que cambiaron nuestra comprensión del cosmos</p>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Radiación Cósmica de Fondo</h3>
+                            <p>El "eco" del Big Bang descubierto por Penzias y Wilson en 1964, que proporciona la mejor evidencia de la teoría del Big Bang.</p>
+                            <a href="descubrimientos.html#rcf" class="btn btn-small">Más info</a>
+                        </div>
+                        <div class="timeline-year">1964</div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Expansión del Universo</h3>
+                            <p>Edwin Hubble descubrió que las galaxias se alejan de nosotros, demostrando que el universo se expande.</p>
+                            <a href="descubrimientos.html#expansion" class="btn btn-small">Más info</a>
+                        </div>
+                        <div class="timeline-year">1929</div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Materia y Energía Oscura</h3>
+                            <p>Descubrimientos recientes muestran que el 95% del universo está compuesto por componentes invisibles.</p>
+                            <a href="descubrimientos.html#materia-oscura" class="btn btn-small">Más info</a>
+                        </div>
+                        <div class="timeline-year">1998</div>
+                    </div>
+                </div>
+
+                <div class="section-footer">
+                    <a href="descubrimientos.html" class="btn btn-outline">Ver todos los descubrimientos</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="cientificos" class="section">
+            <div class="container">
+                <h2 class="section-title">Grandes Mentes de la Cosmología</h2>
+                <p class="section-subtitle">Los científicos cuyas ideas revolucionaron nuestra comprensión del universo</p>
+                
+                <div class="scientists-grid">
+                    <div class="scientist-card" onclick="window.location.href='cientificos.html#galileo'">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Justus_Sustermans_-_Portrait_of_Galileo_Galilei%2C_1636.jpg" alt="Galileo Galilei">
+                        <h3>Galileo Galilei</h3>
+                        <p>Padre de la astronomía moderna</p>
+                    </div>
+                    
+                    <div class="scientist-card" onclick="window.location.href='cientificos.html#newton'">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/GodfreyKneller-IsaacNewton-1689.jpg" alt="Isaac Newton">
+                        <h3>Isaac Newton</h3>
+                        <p>Leyes del movimiento y gravitación</p>
+                    </div>
+                    
+                    <div class="scientist-card" onclick="window.location.href='cientificos.html#einstein'">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Albert_Einstein_Head.jpg" alt="Albert Einstein">
+                        <h3>Albert Einstein</h3>
+                        <p>Teoría de la Relatividad</p>
+                    </div>
+                    
+                    <div class="scientist-card" onclick="window.location.href='cientificos.html#hawking'">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Stephen_Hawking.StarChild.jpg" alt="Stephen Hawking">
+                        <h3>Stephen Hawking</h3>
+                        <p>Agujeros negros y cosmología teórica</p>
+                    </div>
+                </div>
+
+                <div class="section-footer">
+                    <a href="cientificos.html" class="btn btn-outline">Ver todos los científicos</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>Origen del Universo</h3>
+                    <p>Un viaje a través del tiempo y el espacio para comprender los misterios del cosmos.</p>
+                    <div class="socials">
+                        <a href="https://www.instagram.com/luisaroundx?igsh=azExN3F0MnU4ZzYx&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/17872137805" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h3>Enlaces</h3>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#teorias">Teorías</a></li>
+                        <li><a href="#descubrimientos">Descubrimientos</a></li>
+                        <li><a href="#cientificos">Científicos</a></li>
+                        <li><a href="galeria.html">Galería</a></li>
+                        <li><a href="foro.html">Foro</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact">
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-envelope"></i> info@origenuniverso.com</p>
+                    <p><i class="fas fa-phone"></i> +1 (787) 213-7805</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Origen del Universo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Modal para imágenes -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <!-- Audio para resumen -->
+    <audio id="resumenAudio" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

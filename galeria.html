@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería del Universo | Exploración Cósmica</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Origen<span>Universo</span></h1>
+            </div>
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="teorias.html">Teorías</a></li>
+                    <li><a href="descubrimientos.html">Descubrimientos</a></li>
+                    <li><a href="cientificos.html">Científicos</a></li>
+                    <li><a href="#fotos" class="active">Galería</a></li>
+                    <li><a href="foro.html">Foro</a></li>
+                </ul>
+            </nav>
+            <button class="theme-toggle" aria-label="Cambiar tema">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="subpage-hero">
+            <div class="container">
+                <h1>Galería del Universo</h1>
+                <p>Imágenes asombrosas y videos que capturan la belleza y misterio del cosmos</p>
+            </div>
+        </section>
+
+        <section id="fotos" class="gallery-section">
+            <div class="container">
+                <h2 class="section-title">Imágenes del Cosmos</h2>
+                <p class="section-subtitle">Fotografías de telescopios como Hubble y James Webb</p>
+                
+                <div class="gallery-tabs">
+                    <button class="tab-btn active" onclick="filterGallery('all')">Todas</button>
+                    <button class="tab-btn" onclick="filterGallery('galaxias')">Galaxias</button>
+                    <button class="tab-btn" onclick="filterGallery('nebulosas')">Nebulosas</button>
+                    <button class="tab-btn" onclick="filterGallery('planetas')">Planetas</button>
+                    <button class="tab-btn" onclick="filterGallery('estrellas')">Estrellas</button>
+                </div>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-category="galaxias">
+                        <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Galaxia Andrómeda" onclick="openModal(this)">
+                        <div class="gallery-caption">Galaxia Andrómeda - Nuestra vecina cósmica</div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="nebulosas">
+                        <img src="https://images.unsplash.com/photo-1504208434309-cb69f4fe52b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Nebulosa del Águila" onclick="openModal(this)">
+                        <div class="gallery-caption">Nebulosa del Águila - Pilares de la Creación</div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="planetas">
+                        <img src="https://images.unsplash.com/photo-1454789548928-9efd52dc4031?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Júpiter" onclick="openModal(this)">
+                        <div class="gallery-caption">Júpiter - El gigante gaseoso</div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="estrellas">
+                        <img src="https://images.unsplash.com/photo-1464802686167-b939a6910659?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Cúmulo estelar" onclick="openModal(this)">
+                        <div class="gallery-caption">Cúmulo estelar - Guardería de estrellas</div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="galaxias">
+                        <img src="https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Galaxia Remolino" onclick="openModal(this)">
+                        <div class="gallery-caption">Galaxia Remolino - Un ejemplo de galaxia espiral</div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="nebulosas">
+                        <img src="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Nebulosa de Orión" onclick="openModal(this)">
+                        <div class="gallery-caption">Nebulosa de Orión - Visible a simple vista</div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="planetas">
+                        <img src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Saturno" onclick="openModal(this)">
+                        <div class="gallery-caption">Saturno - El señor de los anillos</div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="estrellas">
+                        <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Supernova" onclick="openModal(this)">
+                        <div class="gallery-caption">Restos de supernova - Muerte estelar</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="videos" class="video-section alt-section">
+            <div class="container">
+                <h2 class="section-title">Videos del Universo</h2>
+                <p class="section-subtitle">Documentales y simulaciones del cosmos</p>
+                
+                <div class="video-grid">
+                    <div class="video-card">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/libKVRa01L8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <h3>El Big Bang explicado</h3>
+                        <p>Una explicación detallada de la teoría del Big Bang y las evidencias que la apoyan.</p>
+                    </div>
+                    
+                    <div class="video-card">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/0rHUDWjR5gg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <h3>Viaje al centro de la Vía Láctea</h3>
+                        <p>Simulación de un viaje hacia el agujero negro supermasivo en el centro de nuestra galaxia.</p>
+                    </div>
+                    
+                    <div class="video-card">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/XBr4GkRnY04" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <h3>Materia y energía oscura</h3>
+                        <p>Explicación de los componentes invisibles que forman el 95% del universo.</p>
+                    </div>
+                    
+                    <div class="video-card">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/MTUsOWixK3M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <h3>Primeras imágenes del James Webb</h3>
+                        <p>Las imágenes más profundas del universo jamás captadas por la humanidad.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="simulador" class="simulator-section">
+            <div class="container">
+                <h2 class="section-title">Simulador de Expansión del Universo</h2>
+                <p class="section-subtitle">Interactúa con esta simulación para entender cómo se expande el cosmos</p>
+                
+                <div class="simulator-container">
+                    <div class="simulator-controls">
+                        <div class="control-group">
+                            <label for="expansion-rate">Tasa de expansión:</label>
+                            <input type="range" id="expansion-rate" min="0" max="100" value="50">
+                            <span id="rate-value">50</span>%
+                        </div>
+                        <div class="control-group">
+                            <label for="time-scale">Escala de tiempo:</label>
+                            <select id="time-scale">
+                                <option value="slow">Lento</option>
+                                <option value="medium" selected>Medio</option>
+                                <option value="fast">Rápido</option>
+                            </select>
+                        </div>
+                        <button id="reset-sim" class="btn btn-small">Reiniciar</button>
+                    </div>
+                    
+                    <div class="simulator-display">
+                        <div id="universe-sim"></div>
+                    </div>
+                    
+                    <div class="simulator-info">
+                        <p>Esta simulación muestra cómo las galaxias se alejan unas de otras debido a la expansión del universo. Ajusta los controles para ver cómo diferentes tasas de expansión afectan la distribución de las galaxias.</p>
+                        <p><strong>Nota:</strong> Las galaxias en realidad no se mueven a través del espacio; es el espacio mismo el que se expande.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>Origen del Universo</h3>
+                    <p>Un viaje a través del tiempo y el espacio para comprender los misterios del cosmos.</p>
+                    <div class="socials">
+                        <a href="https://www.instagram.com/luisaroundx?igsh=azExN3F0MnU4ZzYx&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/17872137805" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h3>Enlaces</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="teorias.html">Teorías</a></li>
+                        <li><a href="descubrimientos.html">Descubrimientos</a></li>
+                        <li><a href="cientificos.html">Científicos</a></li>
+                        <li><a href="#fotos">Galería</a></li>
+                        <li><a href="foro.html">Foro</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact">
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-envelope"></i> info@origenuniverso.com</p>
+                    <p><i class="fas fa-phone"></i> +1 (787) 213-7805</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Origen del Universo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Modal para imágenes -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
